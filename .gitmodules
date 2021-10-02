@@ -1,0 +1,3 @@
+[submodule "pl2303gpio"]
+	path = pl2303gpio
+	url = https://github.com/nekromant/pl2303gpio
