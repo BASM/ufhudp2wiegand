@@ -11,7 +11,7 @@ LDFLAGS= libusb-1.0.24/libusb-1.0.a -Os -static
 
 
 
-all: libusb-1.0.24/libusb-1.0.a pl2303gpio/cp2103.c
+all: libusb-1.0.24/libusb-1.0.a pl2303gpio/cp2103.c main.c
 	${CC} ${CFLAGS} pl2303gpio/cp2103.c pl2303gpio/usb.c main.c $(LDFLAGS) -pthread
 	cp a.out a.out.nost
 	${STRIP} a.out
